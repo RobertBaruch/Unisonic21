@@ -1,0 +1,237 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mos
+LIBS:Unisonic21-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PMOS Q1
+U 1 1 588A43C3
+P 2700 2000
+F 0 "Q1" H 2800 2000 60  0000 C CNN
+F 1 "PMOS" H 2600 1450 60  0001 C CNN
+F 2 "" H 2700 2000 60  0001 C CNN
+F 3 "" H 2700 2000 60  0001 C CNN
+F 4 "-" H 2700 2000 60  0001 C CNN "MFG"
+F 5 "-" H 2700 2000 60  0001 C CNN "MFG P/N"
+	1    2700 2000
+	1    0    0    -1  
+$EndComp
+Text HLabel 2300 1200 1    60   Input ~ 0
+/A
+Wire Wire Line
+	2300 2000 2550 2000
+Wire Wire Line
+	2800 1800 2800 1700
+$Comp
+L +12V #PWR?
+U 1 1 588A43CE
+P 2800 1700
+F 0 "#PWR?" H 2800 1550 50  0001 C CNN
+F 1 "+12V" H 2800 1840 50  0000 C CNN
+F 2 "" H 2800 1700 50  0000 C CNN
+F 3 "" H 2800 1700 50  0000 C CNN
+	1    2800 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2200 2800 2250
+Wire Wire Line
+	2800 2250 2800 2300
+$Comp
+L PMOS Q2
+U 1 1 588A43D8
+P 2700 2500
+F 0 "Q2" H 2800 2500 60  0000 C CNN
+F 1 "PMOS" H 2600 1950 60  0001 C CNN
+F 2 "" H 2700 2500 60  0001 C CNN
+F 3 "" H 2700 2500 60  0001 C CNN
+F 4 "-" H 2700 2500 60  0001 C CNN "MFG"
+F 5 "-" H 2700 2500 60  0001 C CNN "MFG P/N"
+	1    2700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PMOS Q3
+U 1 1 588A43E1
+P 2350 2800
+F 0 "Q3" H 2450 2800 60  0000 C CNN
+F 1 "PMOS" H 2250 2250 60  0001 C CNN
+F 2 "" H 2350 2800 60  0001 C CNN
+F 3 "" H 2350 2800 60  0001 C CNN
+F 4 "-" H 2350 2800 60  0001 C CNN "MFG"
+F 5 "-" H 2350 2800 60  0001 C CNN "MFG P/N"
+	1    2350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 588A43E8
+P 2450 3100
+F 0 "#PWR?" H 2450 2850 50  0001 C CNN
+F 1 "GND" H 2450 2950 50  0001 C CNN
+F 2 "" H 2450 3100 50  0000 C CNN
+F 3 "" H 2450 3100 50  0000 C CNN
+	1    2450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3000 2450 3050
+Wire Wire Line
+	2450 3050 2450 3100
+$Comp
+L GND #PWR?
+U 1 1 588A43F0
+P 2800 3100
+F 0 "#PWR?" H 2800 2850 50  0001 C CNN
+F 1 "GND" H 2800 2950 50  0001 C CNN
+F 2 "" H 2800 3100 50  0000 C CNN
+F 3 "" H 2800 3100 50  0000 C CNN
+	1    2800 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2700 2800 3100
+Wire Wire Line
+	2450 3050 2200 3050
+Wire Wire Line
+	2200 3050 2200 2800
+Connection ~ 2450 3050
+Wire Wire Line
+	2450 2450 2450 2500
+Wire Wire Line
+	2450 2500 2450 2600
+Wire Wire Line
+	2450 2500 2550 2500
+$Comp
+L C_Small C1
+U 1 1 588A43FD
+P 2450 2350
+F 0 "C1" H 2300 2250 50  0000 L CNN
+F 1 "C_Small" H 2460 2270 50  0001 L CNN
+F 2 "" H 2450 2350 50  0000 C CNN
+F 3 "" H 2450 2350 50  0000 C CNN
+	1    2450 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 2500
+Wire Wire Line
+	2450 2250 2800 2250
+Wire Wire Line
+	2800 2250 3300 2250
+Connection ~ 2800 2250
+Wire Wire Line
+	2300 1200 2300 1400
+Wire Wire Line
+	2300 1400 2300 2000
+$Comp
+L PMOS Q4
+U 1 1 588A46E1
+P 3450 1750
+F 0 "Q4" H 3550 1750 60  0000 C CNN
+F 1 "PMOS" H 3350 1200 60  0001 C CNN
+F 2 "" H 3450 1750 60  0001 C CNN
+F 3 "" H 3450 1750 60  0001 C CNN
+F 4 "-" H 3450 1750 60  0001 C CNN "MFG"
+F 5 "-" H 3450 1750 60  0001 C CNN "MFG P/N"
+	1    3450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PMOS Q5
+U 1 1 588A471C
+P 3450 2250
+F 0 "Q5" H 3550 2250 60  0000 C CNN
+F 1 "PMOS" H 3350 1700 60  0001 C CNN
+F 2 "" H 3450 2250 60  0001 C CNN
+F 3 "" H 3450 2250 60  0001 C CNN
+F 4 "-" H 3450 2250 60  0001 C CNN "MFG"
+F 5 "-" H 3450 2250 60  0001 C CNN "MFG P/N"
+	1    3450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1950 3550 2000
+Wire Wire Line
+	3550 2000 3550 2050
+Wire Wire Line
+	3050 1750 3300 1750
+$Comp
+L GND #PWR?
+U 1 1 588A47AC
+P 3550 2850
+F 0 "#PWR?" H 3550 2600 50  0001 C CNN
+F 1 "GND" H 3550 2700 50  0001 C CNN
+F 2 "" H 3550 2850 50  0000 C CNN
+F 3 "" H 3550 2850 50  0000 C CNN
+	1    3550 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2450 3550 2850
+$Comp
+L +12V #PWR?
+U 1 1 588A47E3
+P 3550 1450
+F 0 "#PWR?" H 3550 1300 50  0001 C CNN
+F 1 "+12V" H 3550 1590 50  0000 C CNN
+F 2 "" H 3550 1450 50  0000 C CNN
+F 3 "" H 3550 1450 50  0000 C CNN
+	1    3550 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1450 3550 1550
+Wire Wire Line
+	3050 1750 3050 1400
+Wire Wire Line
+	3050 1400 2300 1400
+Connection ~ 2300 1400
+Wire Wire Line
+	3550 2000 4050 2000
+Connection ~ 3550 2000
+Text Label 2950 2250 0    60   ~ 0
+A
+Text HLabel 4050 2000 2    60   Output ~ 0
+PIN2_A
+$EndSCHEMATC

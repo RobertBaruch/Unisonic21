@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MOS_Resistor
+D MOS Resistor
+$ENDCMP
+#
+$CMP R_Small
+D MOS Resistor
+$ENDCMP
+#
+$CMP VC
+K POWER, PWR
+$ENDCMP
+#
+#End Doc Library
