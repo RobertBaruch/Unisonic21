@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -99,9 +99,7 @@ Wire Wire Line
 Text GLabel 6900 900  1    60   Input ~ 0
 PIN2_A
 Wire Wire Line
-	5200 1250 5500 1250
-Wire Wire Line
-	5500 1250 5750 1250
+	5200 1250 5750 1250
 $Sheet
 S 5750 1900 850  550 
 U 588A5126
@@ -120,9 +118,7 @@ PIN1_B_XOR_C
 Wire Wire Line
 	5200 1400 5600 1400
 Wire Wire Line
-	5600 1400 5600 2050
-Wire Wire Line
-	5600 2050 5600 2850
+	5600 1400 5600 2850
 Wire Wire Line
 	5600 2050 5750 2050
 Connection ~ 5600 2050

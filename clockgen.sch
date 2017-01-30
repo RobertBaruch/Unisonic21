@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -45,10 +45,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L PMOS Q1
+L PMOS Q23
 U 1 1 58897E1B
 P 8050 1900
-F 0 "Q1" H 8150 1900 60  0000 C CNN
+F 0 "Q23" H 8150 1900 60  0000 C CNN
 F 1 "PMOS" H 7950 1350 60  0001 C CNN
 F 2 "" H 8050 1900 60  0001 C CNN
 F 3 "" H 8050 1900 60  0001 C CNN
@@ -77,10 +77,10 @@ $EndComp
 Wire Wire Line
 	8150 2100 8150 2200
 $Comp
-L PMOS Q2
+L PMOS Q24
 U 1 1 58897ED4
 P 8050 2400
-F 0 "Q2" H 8150 2400 60  0000 C CNN
+F 0 "Q24" H 8150 2400 60  0000 C CNN
 F 1 "PMOS" H 7950 1850 60  0001 C CNN
 F 2 "" H 8050 2400 60  0001 C CNN
 F 3 "" H 8050 2400 60  0001 C CNN
@@ -90,10 +90,10 @@ F 5 "-" H 8050 2400 60  0001 C CNN "MFG P/N"
 	1    0    0    -1  
 $EndComp
 $Comp
-L PMOS Q3
+L PMOS Q25
 U 1 1 58897F0D
 P 7700 2700
-F 0 "Q3" H 7800 2700 60  0000 C CNN
+F 0 "Q25" H 7800 2700 60  0000 C CNN
 F 1 "PMOS" H 7600 2150 60  0001 C CNN
 F 2 "" H 7700 2700 60  0001 C CNN
 F 3 "" H 7700 2700 60  0001 C CNN
@@ -300,8 +300,6 @@ Wire Wire Line
 	2050 3650 2350 3650
 Wire Wire Line
 	2350 3650 2350 3600
-Text Label 1550 2150 0    60   ~ 0
-/B
 $Comp
 L PMOS Q13
 U 1 1 5889858B
@@ -412,8 +410,6 @@ F 3 "" H 3000 3000 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	3000 2600 3000 3000
-Text Label 2700 2150 0    60   ~ 0
-/C
 $Comp
 L PMOS Q8
 U 1 1 58898B27
@@ -619,14 +615,10 @@ Wire Wire Line
 Wire Wire Line
 	2050 2900 1750 2900
 Connection ~ 1750 2900
-Text Label 2400 3750 0    60   ~ 0
-/(B_XOR_C)
-Text Label 3300 4000 0    60   ~ 0
-B_XOR_C
 Wire Wire Line
 	3800 4000 3800 5450
 Text HLabel 3800 5450 3    60   Output ~ 0
-B_XOR_C
+B_XNOR_C
 $Comp
 L PMOS Q14
 U 1 1 5889B7FB
@@ -798,8 +790,6 @@ Wire Wire Line
 	5350 2400 5350 5450
 Text HLabel 5350 5450 3    60   Output ~ 0
 AMP_C
-Text Label 4450 2150 0    60   ~ 0
-/C
 $Comp
 L PMOS Q19
 U 1 1 5889D53A
@@ -938,8 +928,6 @@ F 3 "" H 6300 2100 50  0000 C CNN
 	1    6300 2100
 	1    0    0    -1  
 $EndComp
-Text Label 5450 2400 0    60   ~ 0
-C
 Wire Wire Line
 	6550 2400 6700 2400
 Wire Wire Line
@@ -1001,4 +989,174 @@ Text Notes 6200 2900 0    60   ~ 0
 s1/2
 Text Notes 5850 3200 0    60   ~ 0
 s1
+Text Label 900  1650 0    40   ~ 0
+OSC.B
+Text Label 1050 2500 2    40   ~ 0
+OSC.0
+Text Label 1750 2400 0    40   ~ 0
+OSC./B
+Text Label 3600 1450 0    40   ~ 0
+OSC.C
+Text Label 3350 2550 2    40   ~ 0
+OSC.2
+Text Label 2650 2400 2    40   ~ 0
+OSC./C
+Text Label 1950 3750 0    40   ~ 0
+OSC.B_XOR_C
+Text Label 1850 4100 2    40   ~ 0
+OSC.5
+Text Label 3800 4150 0    40   ~ 0
+OSC.B_XNOR_C
+Text Label 2800 4350 2    40   ~ 0
+OSC.6
+Text Label 4600 2150 2    40   ~ 0
+OSC./C2
+Text Label 4650 2750 2    40   ~ 0
+OSC.LD16
+Text Label 5100 2400 0    40   ~ 0
+OSC.AMP_C
+Text Label 5800 3100 2    40   ~ 0
+OSC.LD22
+Text Label 6900 1900 0    40   ~ 0
+OSC.A
+Text Label 6500 2750 0    40   ~ 0
+OSC.A_NAND_C
+Text Label 7800 2500 2    40   ~ 0
+OSC.LD25
+Text Label 8350 2400 0    40   ~ 0
+OSC./A
+Wire Notes Line
+	1000 5800 1000 7400
+Wire Notes Line
+	1150 5800 1150 7400
+Wire Notes Line
+	1300 5800 1300 7400
+Wire Notes Line
+	1450 5800 1450 7400
+Wire Notes Line
+	1600 5800 1600 7400
+Wire Notes Line
+	1750 5800 1750 7400
+Wire Bus Line
+	1000 5850 1450 5850
+Wire Bus Line
+	1450 5850 1450 5950
+Wire Bus Line
+	1450 5950 1900 5950
+Wire Bus Line
+	1000 5850 1000 5950
+Wire Bus Line
+	1000 6050 1150 6050
+Wire Bus Line
+	1150 6050 1150 6150
+Wire Bus Line
+	1150 6150 1600 6150
+Wire Bus Line
+	1000 6350 1300 6350
+Wire Bus Line
+	1300 6350 1300 6250
+Wire Bus Line
+	1300 6250 1750 6250
+Text Notes 900  5950 0    60   ~ 0
+A
+Text Notes 900  6150 0    60   ~ 0
+B
+Text Notes 900  6350 0    60   ~ 0
+C
+Text Notes 500  6550 0    60   ~ 0
+B_XNOR_C
+Wire Bus Line
+	1000 6550 1150 6550
+Wire Bus Line
+	1150 6550 1150 6450
+Wire Bus Line
+	1150 6450 1300 6450
+Wire Bus Line
+	1300 6450 1300 6550
+Wire Bus Line
+	1300 6550 1600 6550
+Text Notes 650  6750 0    60   ~ 0
+AMP_C
+Wire Bus Line
+	1000 6750 1300 6750
+Wire Bus Line
+	1300 6750 1300 6650
+Wire Bus Line
+	1300 6650 1750 6650
+Text Notes 500  6950 0    60   ~ 0
+A_NAND_C
+Wire Notes Line
+	1900 5800 1900 7400
+Wire Bus Line
+	1900 5950 1900 5850
+Wire Bus Line
+	1600 6150 1600 6050
+Wire Bus Line
+	1600 6050 1900 6050
+Wire Bus Line
+	1750 6250 1750 6350
+Wire Bus Line
+	1750 6350 1900 6350
+Wire Bus Line
+	1600 6550 1600 6450
+Wire Bus Line
+	1600 6450 1750 6450
+Wire Bus Line
+	1750 6450 1750 6550
+Wire Bus Line
+	1750 6550 1900 6550
+Wire Bus Line
+	1750 6650 1750 6750
+Wire Bus Line
+	1750 6750 1900 6750
+Wire Bus Line
+	1000 6950 1300 6950
+Wire Bus Line
+	1300 6950 1300 6850
+Wire Bus Line
+	1300 6850 1450 6850
+Wire Bus Line
+	1450 6850 1450 6950
+Wire Bus Line
+	1450 6950 1900 6950
+Text Notes 850  7150 0    60   ~ 0
+/A
+Wire Bus Line
+	1000 7050 1000 7150
+Wire Bus Line
+	1000 7150 1450 7150
+Wire Bus Line
+	1450 7150 1450 7050
+Wire Bus Line
+	1450 7050 1900 7050
+Wire Bus Line
+	1900 7050 1900 7150
+Text Notes 1100 5750 1    60   ~ 0
+P0
+Text Notes 1250 5750 1    60   ~ 0
+P1
+Text Notes 1400 5750 1    60   ~ 0
+P2
+Text Notes 1550 5750 1    60   ~ 0
+P3
+Text Notes 1700 5750 1    60   ~ 0
+P4
+Text Notes 1850 5750 1    60   ~ 0
+P5
+Text Notes 2150 6200 0    60   ~ 0
+P0 = 2 us\nP1 = 1.8 us\nP2 = 3 us\nP3 = 0.9 us\nP4 = 1.6 us\nP5 = 3.1 us\n\nP0...P5 = 12.4 us (80.6 kHz)
+Text Notes 2000 6550 0    60   ~ 0
+P1+P4
+Text Notes 2000 6750 0    60   ~ 0
+P2+P3+P4
+Text Notes 2000 6950 0    60   ~ 0
+P2
+Text Notes 2000 7150 0    60   ~ 0
+P3+P4+P5
+$Sheet
+S 9200 3300 1800 1000
+U 588EB2A3
+F0 "Logical equivalent" 60
+F1 "clockgen-logic.sch" 60
+$EndSheet
 $EndSCHEMATC

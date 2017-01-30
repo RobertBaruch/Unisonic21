@@ -1,7 +1,32 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP BUFF
+D Generic BUFF gate
+K BUFF
+$ENDCMP
+#
 $CMP MOS_Resistor
 D MOS Resistor
+$ENDCMP
+#
+$CMP NAND
+D Generic NAND gate
+K NAND
+$ENDCMP
+#
+$CMP NOR
+D Generic NOR gate
+K NOR
+$ENDCMP
+#
+$CMP NOT
+D Generic NOT gate
+K NOT
+$ENDCMP
+#
+$CMP OR
+D Generic OR gate
+K OR
 $ENDCMP
 #
 $CMP R_Small
@@ -10,6 +35,16 @@ $ENDCMP
 #
 $CMP VC
 K POWER, PWR
+$ENDCMP
+#
+$CMP XNOR
+D Generic XNOR gate
+K XNOR
+$ENDCMP
+#
+$CMP XOR
+D Generic XOR gate
+K XOR
 $ENDCMP
 #
 #End Doc Library
